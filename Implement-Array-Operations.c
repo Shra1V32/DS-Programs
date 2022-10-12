@@ -51,6 +51,23 @@ int deletionAtPos()
     // a[0] = 0;
 }
 
+int search(int value)
+{
+    int i,k;
+    for (i=0; i<len; i++)
+    {
+        if (a[i]==value)
+        {
+            k=1;
+            break;
+        }
+    }
+    if (k==1)
+    printf("Element found at %d position",i+1);
+    else
+    printf("Element not found");
+    getch();
+}
 int main()
 {
     int choice;
@@ -67,7 +84,7 @@ int main()
         }
         printf("]\n");
         printf("Length of the Array: %d\n",len);
-        printf("\n1. Insert an element\n2. Insert at a position\n3. Deletion\n4. Deletion at position\n5. Exit");
+        printf("\n1. Insert an element\n2. Insert at a position\n3. Search for an element\n4. Deletion\n5. Deletion at position\n6. Exit");
         printf("\n Enter your choice: ");
         scanf(" %d", &choice);
         switch (choice)
@@ -81,12 +98,17 @@ int main()
             InsertAtPos(element, pos);
             break;
         case 3:
-            deletion();
+            printf("Enter the element to search: ");
+            scanf("%d",&element);
+            search(element);
             break;
         case 4:
-            deletionAtPos();
+            deletion();
             break;
         case 5:
+            deletionAtPos();
+            break;
+        case 6:
             exit(0);
         default:
             break;
