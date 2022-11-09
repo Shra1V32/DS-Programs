@@ -22,7 +22,7 @@ void main(){
             res = eval(ch, op1, op2);
         }
     x = pop();
-    printf("Evaluated value: %d", res);
+    printf("Evaluated value: %d", x);
     }
 }
 void push(int n){
