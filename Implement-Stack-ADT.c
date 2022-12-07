@@ -1,3 +1,9 @@
+/* Stack
+// Follows LIFO
+// Last in First Out
+// Element gets added last (end), and first one gets deleted
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 20

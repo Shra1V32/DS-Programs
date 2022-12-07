@@ -1,3 +1,6 @@
+// Follows FIFO
+// Why? Element always gets added first, and first element always gets deleted
+
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 20
