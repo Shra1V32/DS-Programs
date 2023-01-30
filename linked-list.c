@@ -69,7 +69,7 @@ void insertAtPos(int position)
         else
         {
             ptr = first;
-            for (int i = 0; i < position; i++)
+            for (int i = 0; i < position -1; i++)
             {
                 ptr = ptr->next;
             }
@@ -133,7 +133,8 @@ void main()
         printf("\033[H\033[2J");
         display();
         printf("1. Insert\n2. Insert at position\n3. deletion\n4. deletion at position\n5.Exit\n6.Display");
-        scanf("%d", &choice);
+	printf("\n\nEnter your choice: "); 
+       scanf("%d", &choice);
         switch (choice)
         {
         case 1:
