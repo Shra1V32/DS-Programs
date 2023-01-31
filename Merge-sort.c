@@ -40,11 +40,10 @@ void mergesort(int low, int mid, int high)
     }
     while (i<=mid)
         t[k++] = a[i++];
-    while (j<=high){
+    while (j<=high)
         t[k++] = a[j++];
     for (i=low; i<=high; i++){
         a[i] = t[i];
-    }
 }
 void msortdiv(int low, int high)
 {
