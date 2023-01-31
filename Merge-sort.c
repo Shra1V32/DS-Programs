@@ -27,6 +27,25 @@ void display()
     }
 }
 
+void mergesort(int low, int mid, int high)
+{
+    int t[50],i,j,k;
+    i = low;
+    j=mid+1;
+    k = low;
+    while ((i<=mid) && (j<=high)
+    {
+        if (a[i]>=a[j]) t[k++] = a[j++];
+        else t[k++] = a[i++];
+    }
+    while (i<=mid)
+        t[k++] = a[i++];
+    while (j<=high){
+        t[k++] = a[j++];
+    for (i=low; i<=high; i++){
+        a[i] = t[i];
+    }
+}
 void msortdiv(int low, int high)
 {
     int mid;
